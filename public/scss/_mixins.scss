@@ -1,0 +1,12 @@
+@mixin simple-text {
+    text-decoration: none;
+    font-family: $roboto;
+    font-weight: 100;
+    color: white;
+    letter-spacing: 0.2em;
+  }
+
+  @mixin accent-text {
+      @include simple-text;
+    font-weight: 500;
+  }

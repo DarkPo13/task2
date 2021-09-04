@@ -1,0 +1,364 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (min-width: 500px) {
+  .title__paragraph_size_sm {
+    width: 70%;
+  }
+  .title__heading_size_sm {
+    font-size: 70px;
+    width: 90%;
+  }
+  .grid_size_sm {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  .flex_size_sm {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .flex__paragraph_size_sm {
+    width: 70%;
+  }
+  .flex__img_size_sm {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .title__paragraph_size_md {
+    width: 50%;
+  }
+  .title__heading_size_md {
+    font-size: 100px;
+    width: 70%;
+  }
+  .grid_size_md {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .flex__paragraph_size_md {
+    width: 50%;
+  }
+  .flex__img_size_md {
+    width: 47%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .title__paragraph_size_lg {
+    width: 30%;
+  }
+  .title__heading_size_lg {
+    font-size: 120px;
+    width: 55%;
+  }
+  .grid_size_lg {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  .flex__paragraph_size_lg {
+    width: 30%;
+  }
+  .flex__img_size_lg {
+    width: 27%;
+  }
+}
+
+.title {
+  height: 1000px;
+  width: auto;
+}
+
+.title__heading {
+  color: #3a3333;
+  margin: 280px 0 0 30px;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  color: white;
+  letter-spacing: 0.2em;
+  font-weight: 500;
+}
+
+.title__heading:hover {
+  font-size: 7rem;
+}
+
+.title__paragraph {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  color: white;
+  letter-spacing: 0.2em;
+  margin: 30px;
+}
+
+.title__navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title__navbar-brand {
+  text-decoration: none !important;
+  border-bottom: 1px solid white;
+  color: white !important;
+  font-size: 48px;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 300;
+  letter-spacing: 23px !important;
+  margin: 30px 0 0 30px;
+}
+
+.title__navbar-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  margin-left: auto;
+  padding: 0;
+}
+
+.title-section-image {
+  width: auto;
+  background: url("../files/pexels-pixabay-247431.jpg") no-repeat center/cover;
+  background-color: #16242D;
+}
+
+h2 {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  color: white;
+  letter-spacing: 0.2em;
+}
+
+nav li {
+  float: right;
+}
+
+li a {
+  text-decoration: none !important;
+  text-align: center;
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  padding: 0 30px;
+  color: white !important;
+  letter-spacing: 0.2em !important;
+}
+
+li a:hover {
+  background-color: #9b9b9b;
+}
+
+.test-section {
+  background-color: #16242D;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.grid__img {
+  width: 90%;
+}
+
+.grid__paragraph {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  color: white;
+  letter-spacing: 0.2em;
+  margin: 30px;
+}
+
+.main-content {
+  background-color: #16242D;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex__svg {
+  text-align: center;
+  padding-top: 35px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 30%;
+}
+
+.flex__svg-footer {
+  width: 35%;
+}
+
+.flex__svg-spacing {
+  margin: 5px 40px;
+}
+
+.flex__paragraph {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  color: white;
+  letter-spacing: 0.2em;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  margin: 30px;
+}
+
+.flex__paragraph-footer {
+  margin: 5px;
+}
+
+.flex__paragraph--left {
+  text-align: left;
+}
+
+.flex__img {
+  margin: 30px;
+}
+
+@-webkit-keyframes first-quote {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 10%;
+  }
+}
+
+@keyframes first-quote {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 10%;
+  }
+}
+
+@-webkit-keyframes second-quote {
+  0% {
+    right: 0;
+    top: 50px;
+  }
+  100% {
+    right: 10%;
+    top: 150px;
+  }
+}
+
+@keyframes second-quote {
+  0% {
+    right: 0;
+    top: 50px;
+  }
+  100% {
+    right: 10%;
+    top: 150px;
+  }
+}
+
+.animation-section {
+  position: relative;
+  height: 350px;
+  width: auto;
+  background: url("../files/image3.png") no-repeat center/cover;
+}
+
+.animation-section__quote1, .animation-section__quote2 {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  color: white;
+  letter-spacing: 0.2em;
+  width: 50vw;
+  margin: 30px;
+  position: absolute;
+}
+
+.animation-section .is-visible--1 {
+  -webkit-animation-name: first-quote;
+          animation-name: first-quote;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.animation-section .is-visible--2 {
+  -webkit-animation: second-quote 3s ease 1 alternate 0s forwards;
+          animation: second-quote 3s ease 1 alternate 0s forwards;
+}
+
+.footer-section {
+  position: relative;
+  height: auto;
+  width: auto;
+  background-color: #16242D;
+  text-align: left;
+}
+
+.footer-section__heading {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  color: white;
+  letter-spacing: 0.2em;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 200;
+  font-size: 35px;
+  margin: 5px;
+}
+
+.footer-section__svg1 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: inherit;
+}
+
+.footer-section__svg2 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 25%;
+}
