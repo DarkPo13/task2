@@ -5,7 +5,7 @@
       var newLoc = $(document).scrollTop();
       var diff = scrollLoc - newLoc;
       rotation += diff, scrollLoc = newLoc;
-      var rotationStr = "rotate(" + rotation + "deg)";
+      var rotationStr = "rotate(" + rotation * 0.5 + "deg)";
       $(".rotate").css({
         "-webkit-transform": rotationStr,
         "-moz-transform": rotationStr,
@@ -30,42 +30,42 @@
   targets.forEach(function (target) {
     observer.observe(target);
   });*/
-  
-var scroll = window.requestAnimationFrame ||
-function(callback){ window.setTimeout(callback, 1000/60)};
-var elementsToShow = document.querySelectorAll('.show-on-scroll'); 
 
-function loop() {
+  var scroll = window.requestAnimationFrame ||
+    function (callback) {
+      window.setTimeout(callback, 1000 / 60)
+    };
+  var elementsToShow = document.querySelectorAll('.show-on-scroll');
 
-Array.prototype.forEach.call(elementsToShow, function(element){
-if (isElementInViewport(element)&&element.classList.contains("animation-section__quote1")) {
-element.classList.add('is-visible--1');
-}else if(isElementInViewport(element)&&element.classList.contains("animation-section__quote2")){
-  element.classList.add('is-visible--2');
-}else {
-element.classList.remove('is-visible--1');
-element.classList.remove('is-visible--2');
-}
-});
+  function loop() {
 
-scroll(loop);
-}
+    Array.prototype.forEach.call(elementsToShow, function (element) {
+      if (isElementInViewport(element) && element.classList.contains("animation-section__quote1")) {
+        element.classList.add('is-visible--1');
+      } else if (isElementInViewport(element) && element.classList.contains("animation-section__quote2")) {
+        element.classList.add('is-visible--2');
+      } else {
+        element.classList.remove('is-visible--1');
+        element.classList.remove('is-visible--2');
+      }
+    });
 
-loop();
+    scroll(loop);
+  }
 
-function isElementInViewport(el) {
-if (typeof jQuery === "function" && el instanceof jQuery) {
-el = el[0];
-}
-var rect = el.getBoundingClientRect();
-return (
-(rect.top <= 0
-&& rect.bottom >= 0)
-||
-(rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
-rect.top <= (window.innerHeight || document.documentElement.clientHeight))
-||
-(rect.top >= 0 &&
-rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
-);
-}
+  loop();
+
+  function isElementInViewport(el) {
+    if (typeof jQuery === "function" && el instanceof jQuery) {
+      el = el[0];
+    }
+    var rect = el.getBoundingClientRect();
+    return (
+      (rect.top <= 0 &&
+        rect.bottom >= 0) ||
+      (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.top <= (window.innerHeight || document.documentElement.clientHeight)) ||
+      (rect.top >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
+    );
+  }

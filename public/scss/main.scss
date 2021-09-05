@@ -8,8 +8,7 @@
 //----------------------------------
 
 .title {
-  height: 1000px;
-  width: auto;
+  padding: 10px;
 
   &__heading {
     color: rgb(58, 51, 51);
@@ -30,7 +29,7 @@
     display: flex;
     align-items: center;
   }
-  
+
   &__navbar-brand {
     text-decoration: none !important;
     border-bottom: 1px solid white;
@@ -41,8 +40,8 @@
     letter-spacing: 23px !important;
     margin: 30px 0 0 30px;
   }
-  
-  
+
+
   &__navbar-nav {
     display: flex;
     list-style-type: none;
@@ -52,7 +51,8 @@
 }
 
 .title-section-image {
-  width: auto;
+  max-width: 100%;
+  height: auto;
   background: url("../files/pexels-pixabay-247431.jpg") no-repeat center/cover;
   background-color: #16242D;
 }
@@ -72,13 +72,14 @@ li a {
   font-size: 24px;
   font-family: $roboto;
   font-weight: 300;
-  padding: 0 30px;
+  padding: 0 30px !important;
   color: white !important;
-  letter-spacing: 0.2em !important;
+  letter-spacing: 0.3em !important;
 }
 
 li a:hover {
-  background-color: #9b9b9b;
+  background-color: #cccccc !important;
+  color: black !important;
 }
 
 //----------------------------------
